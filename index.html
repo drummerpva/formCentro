@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <title>Boleto</title>
+        <meta charset='utf-8'/>
+        <style>
+            body{
+                background-color: #EEE;
+            }
+            .centro{
+                width:80%;
+                max-width: 500px;
+                height: 80%;
+                max-height: 500px;
+                position:absolute;
+                top:50%;
+                left:50%;
+                margin-right: -50%;
+                transform: translate(-50%, -50%);
+                background-color: #FFF;
+                border-radius: 5px;
+            }
+            .titulo{
+                margin:15px;
+                padding:5px;
+                border-top: 3px #CCC solid;
+                text-align: center;
+            }
+            .titulo h1{
+                color:#706E70;
+            }
+            .form{
+                text-align: center;
+            }
+            .rodape{
+                text-align: center;
+                padding-top: 30px;
+            }
+            .rodape img{
+                width: 80px;
+
+            }
+            input[type='tel']{
+                width:60%;
+                height: 50px;
+                text-align: center;
+                font-size: 30px;
+                outline: none;
+                font-weight: bold;
+                color:#706E70;
+                border:none;
+                border-bottom: 3px solid #888;
+                margin-bottom: 10px;
+            }
+            input[type='submit']{
+                width: 60%;
+                height: 50px;
+                font-size: 25px;
+                font-weight: bold;
+                background-color: #5753C6;
+                color: #D1EBF0;
+                border:none;
+                border-radius: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class='centro'>
+            <div class='titulo'>
+                <h1>Por favor, informe apenas os 4 últimos dígitos do seu CPF ou CNPJ:</h1>
+            </div>
+            <div class='form'>
+                <form method='post'>
+                    <input type='tel' name='cpf4'  maxlength='4' required/> <br/>
+                    <input type='submit' value='Continuar'>
+                </form>
+            </div>
+            <div class='rodape'>
+                <img src='padlock.svg' />
+            </div>
+        </div>
+    </body>
+</html>
